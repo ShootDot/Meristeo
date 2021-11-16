@@ -1,0 +1,36 @@
+{
+    "name": "electron",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^15.3.0"
+    },
+    "dependencies": {
+        "discord-rpc": "^4.0.1",
+        "electron-is-dev": "^2.0.0",
+        "ytdl-core": "^4.9.1",
+        "ytsr": "^3.5.3"
+    },
+    "build": {
+        "appId": "com.meristeo.app",
+        "productName": "Meristeo",
+        "target": [
+            "mac",
+            "win",
+            "linux"
+        ],
+        "mac": {
+            "target": [
+                "dmg"
+            ],
+            "identity": null,
+            "category": "public.app-category.utilities"
+        }
+    }
+}

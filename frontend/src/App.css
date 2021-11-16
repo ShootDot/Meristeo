@@ -1,0 +1,218 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#content {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    -webkit-box-shadow: 0px -12px 80px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -12px 80px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -12px 80px -5px rgba(0, 0, 0, 0.75);
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+#content #range {
+    width: 100%;
+    margin-top: -10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background: #EF6C00;
+    cursor: pointer;
+    margin-top: -14px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+input[type=range]::-webkit-slider-thumb:active {
+    height: 38px;
+    width: 38px;
+    margin-top: -18px;
+}
+
+input[type=range]::-moz-slider-thumb:active {
+    height: 38px;
+    width: 38px;
+    margin-top: -18px;
+}
+
+input[type=range]::-ms-slider-thumb:active {
+    height: 38px;
+    width: 38px;
+    margin-top: -18px;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background: #EF6C00;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type=range]::-ms-thumb {
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background: #EF6C00;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #EF6C00;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #EF6C00;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #EF6C00;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #EF6C00;
+}
+
+input[type=range]::-ms-fill-lower {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #EF6C00;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #EF6C00;
+}
+
+input[type=range]::-ms-fill-upper {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: #EF6C00;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #EF6C00;
+}
+
+
+/*
+ OK, I NEED TO CALM DOWN
+*/
+
+#content #time {
+    float: left;
+    position: absolute;
+    left: 30px;
+    bottom: 45px;
+}
+
+#content #time p {
+    /* font-family: Roboto; */
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#content #total-time {
+    float: left;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+#content #total-time p {
+    color: #000;
+    /* font-family: Roboto; */
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#content #buttons {
+    width: 100%;
+    margin: -5px auto;
+    text-align: center;
+    height: 120px;
+}
+
+#content #buttons i {
+    cursor: pointer;
+    padding-left: 50px;
+    line-height: 120px;
+}

@@ -1,0 +1,14 @@
+.App {
+    display: flex;
+    min-height: 85vh;
+    max-height: 85vh;
+    overflow: auto;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    width: 100% !important;
+    height: 100px !important;
+}
